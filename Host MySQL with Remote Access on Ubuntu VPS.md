@@ -19,7 +19,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'my-secre
 sudo mysql_secure_installation
 ```
 
-#### Create New User & Grant Priviliges
+#### Create New User & Grant Privileges (For Remote Access)
 
 ```sql
 CREATE USER 'root'@'%' IDENTIFIED BY 'PASSWORD';
@@ -38,7 +38,7 @@ Check users with host
 SELECT User, Host FROM mysql.user;
 ```
 
-#### Edit MySQL Config File
+#### Edit MySQL Config File (Allow remote access in config file)
 
 Edit: comment out - bind-address & mysqlx-bind-address
 ```shell
