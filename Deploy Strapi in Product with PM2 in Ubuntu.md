@@ -12,6 +12,7 @@ NODE_ENV=production npm run build
 ```
 
 ### Start Strapi server in production with PM2
+
 Change the app to desired name
 
 ```shell
