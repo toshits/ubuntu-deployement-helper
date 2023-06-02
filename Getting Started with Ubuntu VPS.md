@@ -12,7 +12,7 @@ sudo apt upgrade
 ```
 
 ```bash
-sudo apt install build-essential
+sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
 ```
 
 #### Allow SSH access in the firewall configuration before activating the firewall

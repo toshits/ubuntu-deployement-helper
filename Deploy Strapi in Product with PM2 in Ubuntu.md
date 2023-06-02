@@ -22,7 +22,11 @@ pm2 start npm --name app -- run start
 ### Save the PM2 so that after server restart app automatically starts
 
 ```shell
-pm2 save
+sudo pm2 startup
+```
+
+```shell
+sudo pm2 save
 ```
 
 Note: Don't forget to allow strapi port in firewall
