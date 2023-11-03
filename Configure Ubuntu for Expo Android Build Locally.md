@@ -64,7 +64,7 @@ javac -version
 *Replace the java-1.x.x-openjdk with your folder name
 
 ```shell
-export JAVA_HOME="path that you found"
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 ```
 
 ```shell
@@ -156,8 +156,13 @@ eas login
 eas build --profile development --platform android --local
 ```
 
-Now your app should have build without any errors
+***Command for production build for internal testing*
 
+```shell
+eas build -p android --non-interactive --profile preview --local
+```
+
+Now your app should have build without any errors
 
 ### NOTE: System requirements for building expo app for android 
 
